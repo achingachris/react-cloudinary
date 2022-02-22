@@ -15,9 +15,7 @@ const Home = () => {
   // cld.image returns a CloudinaryImage with the configuration set.
   const image_1 = cld.image('cld-sample')
   const image_2 = cld.image('sample')
-  const image_3 = cld.image(
-    'Brock_Lesnar_Profile--50493bfde9a49b359bb5853996fc8c8c_lzz8yc'
-  )
+  const image_3 = cld.image('broke')
 
   // The URL of the image is: https://res.cloudinary.com/demo/image/upload/sample
 
@@ -31,6 +29,7 @@ const Home = () => {
       <Header head={pageTitle} description={pageDescription} />
 
       <div className='container'>
+        <h1 className='text-center'>Images</h1>
         <div className='row'>
           <div className='col-4'>
             <AdvancedImage cldImg={image_1} className='container' />
@@ -42,6 +41,10 @@ const Home = () => {
             <AdvancedImage cldImg={image_3} className='container' />
           </div>
         </div>
+      </div>
+
+      <div className='container'>
+        <h1>Videos</h1>
       </div>
     </div>
   )
